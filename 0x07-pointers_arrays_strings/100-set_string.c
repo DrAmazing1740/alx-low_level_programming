@@ -1,13 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
-void ptrch ( char ** point) {
-    *point = "asd";
-}
-
-int main() {
-    char * point;
-    ptrch(&point);
-    printf("%s\n", point);
-    return 0;
+/**
+ * set_string - sets the value of a pointer to a char
+ * @s: pointer to pointer we need to set to
+ * @to: string to set
+ */
+void set_string(char **s, char *to)
+{
+	*s = to;
 }
