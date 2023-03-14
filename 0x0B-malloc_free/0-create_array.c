@@ -3,10 +3,9 @@ include <stdlib.h>
 
 /**
  * *create_array will create an array of char,
- * also nitializes it with a specific char
- * @size: size of the array to crat
- *  *@c: char to initialize the array c
- *
+ * also initializes it with a specific char
+ * @size: size of the array
+ * @c: char to initialize the array c
  * Return: pointer to the array (Success), NULL (Error)
  */
 char *create_array(unsigned int size, char c)
