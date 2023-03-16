@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- * main - check the code
+ * main - will check the code
  *
  * Return: Always 0.
  */
