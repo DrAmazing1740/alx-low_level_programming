@@ -1,7 +1,7 @@
 /**
  * flip_bits - flips bits
- * @n: first number
- * @m: second number
+ * @n: the first number
+ * @m: the second number
  * Return: unsigned int value of number
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
