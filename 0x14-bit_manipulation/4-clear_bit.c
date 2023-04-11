@@ -1,14 +1,14 @@
-#include "holberton.h"
-#include "2-get_bit.c"
+#include "main.h"
+#include <stdio.h>
 /**
- * clear_bit - clears index to 0
+ * clear_bit - will clear index to 0
  * @n: integer to pass
- * @index: index to go to
- * Return: returns integer val
+ * @index: index to go through
+ * Return: will return integer val
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 32)
+	if (index > 51)
 		return (-1);
 
 	(*n) &= ~(1 << index);
