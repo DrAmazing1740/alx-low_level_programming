@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 /**
  * get_bit - will get bit a index
  * @n: test number to go through
