@@ -2,28 +2,38 @@
 #include <stdio.h>
 
 /**
- * print_binary - print binary representation of a number
- * @n: decimal number to print as binary
+ * print_binary - print binary
+ * @n: integer to work with
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp;
-	int shifts;
+	unsigned long int i = 1;
 
-	if (n == 0)
+	i <<= ((sizeof(i) * 8) - 1);
+	if (n == 1)
 	{
-		printf("0");
+		_putchar('1');
 		return;
 	}
-
-	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
-		;
-
-	for (; shifts >= 0; shifts--)
+	if (n == 0)
 	{
-		if ((n >> shifts) & 1)
-			printf("1");
+		_putchar('0');
+		return;
+		}
+	while (i > 0)
+	{
+		if ((i & n) == 0)
+			i = i >> 1;
 		else
-			printf("0");
+			break;
 	}
+	while (i > 0)
+	{
+		if ((i & n) == 0)
+			_putchar('0');
+		else
+			_putchar('1');
+		i = i >> 1;
+	}
+
 }
