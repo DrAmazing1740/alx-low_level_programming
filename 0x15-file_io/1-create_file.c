@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * create_file - Creates a file.
- * @filename: This is a pointer to the name of the file.
- * @text_content: Pointer to the string.
+ * create_file - Creates the file.
+ * @filename: Pointer to the name of the file.
+ * @text_content: Pointer to a string.
  *
  * Return: If the function fails - -1.
  *         Otherwise - 1.
@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
     if (filename == NULL)
         return (-1);
 
-    int fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+    int fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
     if (fd == -1)
         return (-1);
 
@@ -35,4 +35,5 @@ int create_file(const char *filename, char *text_content)
 
     return (1);
 }
+
 
