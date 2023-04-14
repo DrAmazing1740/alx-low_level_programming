@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * read_textfile - To read the textfile
  * @letters: amount of bytes to read 
