@@ -1,3 +1,10 @@
+#include "main.h"
+/**
+ * main - program that copies the content of a file to another file
+ * @ac: argument
+ * @av: total array of arguments
+ * Return: a value
+ */
 int main(int ac, char **av)
 {
 	int fdFrum, fdToo, wrote, readed;
